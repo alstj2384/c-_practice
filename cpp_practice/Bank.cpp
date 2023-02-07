@@ -14,11 +14,11 @@ int main(){
     
     b.deposit(50000);
     b.status();
-    money = b.withdraw(20000);
+    money = b.withdraw(280000);
     b.status();
 
     cout << a.inquiry() - b.inquiry() << endl;
 
-	return 0; 
+	return 0;  
 
 }
