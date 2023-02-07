@@ -18,6 +18,7 @@ int main(){
     b.status();
 
     cout << a.inquiry() - b.inquiry() << endl;
+    cout << a.inquiry() - b.inquiry() << endl;
 
 	return 0;  
 
