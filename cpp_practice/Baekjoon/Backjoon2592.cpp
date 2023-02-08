@@ -24,7 +24,7 @@ int main(){
     for(int i = 0; i< 10; i++){
         tmp = tmp + list[i][0] * list[i][1];
     }
-        cout << "ЦђБе : " << tmp/10 << endl;
+        cout << tmp/10 << endl;
     
 
 
