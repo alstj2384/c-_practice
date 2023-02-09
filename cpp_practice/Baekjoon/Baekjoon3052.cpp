@@ -9,7 +9,7 @@ int main() {
         cin >> arr[i];
         auto it = std::find(std::begin(arr_r), std::end(arr_r), arr[i] % 42);
         if (it == std::end(arr_r)) {
-            arr_r[j] = arr[i] % 43;
+            arr_r[j] = arr[i] % 42;
             j++;
         }
     }
