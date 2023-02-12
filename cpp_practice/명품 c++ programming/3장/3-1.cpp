@@ -19,10 +19,10 @@ class Tower{
 
 
 int main() {
-    Tower myTower; // 1 πÃ≈Õ
-    Tower seoulTower(100); // 100 πÃ≈Õ
-    cout << "≥Ù¿Ã¥¬ " << myTower.getHeight() << "πÃ≈Õ" << endl;
-    cout << "≥Ù¿Ã¥¬ " << seoulTower.getHeight() << "πÃ≈Õ" << endl;
+    Tower myTower; // 1 ÎØ∏ÌÑ∞
+    Tower seoulTower(100); // 100 ÎØ∏ÌÑ∞
+    cout << "ÎÜíÏù¥Îäî " << myTower.getHeight() << "ÎØ∏ÌÑ∞" << endl;
+    cout << "ÎÜíÏù¥Îäî " << seoulTower.getHeight() << "ÎØ∏ ÌÑ∞" << endl;
 
     return 0;
 }
