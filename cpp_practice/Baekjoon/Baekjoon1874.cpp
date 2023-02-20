@@ -16,16 +16,20 @@ int main(){
     }// 벡터의 인덱스 순서는 pop되어야 하는 순서
 
     int low_idx = 0;
-    // for(int i = 0 ; i < v.size()-1; i++){
-    //     if(v[i+1] == v[i]-1 || v[i] < v[i+1]){
-    //         continue;
-    //     }
-    //     else{
-    //         cout << "No" << endl;
-    //     }
-    // }
+    for(int i = 0 ; i < v.size()-1; i++){
+        if(v[i+1] == v[i]-1 || v[i] < v[i+1] ||){
+            continue;
+        }
+        else{
+            cout << "No" << endl;
+        }
+    }
 
-    cout << v.size()<<endl;
+    if(low_idx < v[i]) low_idx = v[i];
+    else if(low_idx > v[i]){
+        
+    }
+
     return 0;
 } //30분시작 + 30분시작
 
