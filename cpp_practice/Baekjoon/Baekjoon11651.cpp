@@ -20,7 +20,8 @@ bool compare(const coor& a1, const coor& a2){
 
 using namespace std;
 
-int main(){
+int main(){    
+    ios_base::sync_with_stdio(0); cin.tie(0);
 
     vector<coor> v;
     int a, b, c;
@@ -35,7 +36,7 @@ int main(){
 
     sort(v.begin(), v.end(), compare);
     for(coor elem : v){
-        cout << elem.x << elem.y << endl;
+        cout << elem.x << " "<< elem.y << '\n';
     }
 
     return 0;
