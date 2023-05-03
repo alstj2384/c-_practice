@@ -1,4 +1,4 @@
-//선형큐 
+//원형큐
 
 #include <stdio.h>
 #define MAX_QUEUE_SIZE 5
@@ -14,7 +14,7 @@ void error(char * message){
 }
 
 void init(QueueType *q){
-    q->rear = q->front = -1;
+    q->rear = q->front = 0;
 }
 
 int is_empty(QueueType *q){
@@ -22,28 +22,31 @@ int is_empty(QueueType *q){
 }
 
 int is_full(QueueType *q){
-    return q->rear == MAX_QUEUE_SIZE-1;
+    return q->rear +1 % MAX_QUEUE_SIZE == q->front;
 }
 
 void enqueue(QueueType *q, element item){
     if(is_full(q)){
         error("큐가 포화상태입니다");
     }
-    q->data[++(q->rear)] = item;
+    q->rear = (q->rear + 1) % MAX_QUEUE_SIZE;
+    q->data[q->rear] = item;
 }
 
 element dequeue(QueueType *q){
     if(is_empty(q)){
         error;
     }
-    return q->data[++q->front];
+    //front를 증가시키고, 그 자리에 있는 값을 반환하는거이낚
+    q->front = (q->front +1 )  % MAX_QUEUE_SIZE;
+    return q->data[q->front];
 }
 
 element peek(QueueType *q){
     if(is_empty(q)){
         error;
     }
-    return q->data[q->front];
+    return q->data[(q->front+1)%MAX_QUEUE_SIZE];
 }
 
 
